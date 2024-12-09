@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <div className="border rounded-2xl mt-4 bg-gradient-to-r from-gray-900 via-black to-gray-900 max-h-[500px] flex items-center justify-center">
+    <div className="border rounded-2xl my-20 py-16 bg-gradient-to-r from-gray-900 via-black to-gray-900 max-h-[500px] flex items-center justify-center">
       {/* Left: Image Section */}
-      <div className="relative w-1/2 flex justify-center items-center">
+      <div className="relative w-2/3 flex justify-center items-center">
         <Image
           src="/assest/phone.png" // Place your image in the `public/assets` folder
           alt="Phone"
-          width={400}
+          width={700}
           height={1000}
-          className="object-contain"
+          className="absolute object-contain"
         />
       </div>
 
