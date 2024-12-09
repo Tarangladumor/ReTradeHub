@@ -10,8 +10,10 @@ export default function Header() {
       {/* Header Section */}
       <header className="w-full flex justify-between items-center px-4 sm:px-8 py-4">
         <div className="text-xl sm:text-2xl font-bold">E-W</div>
+ 
 
         {/* Desktop Navigation */}
+ 
         <nav className="hidden sm:flex space-x-4 sm:space-x-8">
           <a href="#home" className="hover:text-blue-400 text-sm sm:text-base">
             Home
@@ -40,7 +42,7 @@ export default function Header() {
           Login
         </button>
       </header>
-
+ 
       {/* Mobile Navigation Menu */}
       {menuOpen && (
         <nav className="sm:hidden flex flex-col space-y-2 w-full px-4 py-2 bg-gray-800 text-white">
@@ -59,6 +61,8 @@ export default function Header() {
         </nav>
       )}
 
+=======
+ 
       {/* Main Section */}
       <main className="flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-24 py-8 sm:py-16 w-full">
         {/* Text Content */}
