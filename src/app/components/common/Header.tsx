@@ -7,7 +7,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="border rounded-3xl mt-3 max-h-[535px] bg-gradient-to-b from-black to-gray-900 text-white flex flex-col items-center">
+    <div className="border rounded-3xl mt-12 max-h-[535px] bg-gradient-to-b from-black to-gray-900 text-white flex flex-col items-center">
       {/* Header Section */}
       <header className="w-full flex justify-between items-center px-4 sm:px-8 py-4 relative">
         <div className="text-xl sm:text-2xl font-bold">E-W</div>
@@ -61,9 +61,9 @@ export default function Header() {
       )}
 
       {/* Main Section */}
-      <main className="flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-24 py-8 sm:py-16 w-full">
+      <main className="flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:pl-24 py-8 sm:py-16">
         {/* Text Content */}
-        <div className="lg:w-1/2 space-y-4 sm:space-y-6 text-center lg:text-left">
+        <div className="lg:w-2/3 space-y-4 sm:space-y-6 text-center lg:text-left">
           <h1 className="text-[clamp(1.5rem,4vw,3.75rem)] font-bold leading-tight">
             Turn Your Old Electronics into Cash Today!
           </h1>
@@ -72,7 +72,7 @@ export default function Header() {
             easy, and rewarding.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white text-[clamp(0.875rem,2vw,1rem)] px-4 sm:px-6 py-2 sm:py-3 rounded-lg">
+            <button className="bg-blue-500 hover:bg-blue-600 text-white text-[clamp(0.875rem,2vw,1rem)] px-4 sm:px-6 py-2 sm:py-3 rounded-full">
               Sell And Earn
             </button>
           </div>
@@ -81,17 +81,18 @@ export default function Header() {
         {/* Image Section */}
         <div className="lg:w-1/2 mt-6 sm:mt-8 lg:mt-0 relative flex justify-center">
           <div className="relative">
+            {/* Animated Background */}
+            <div className="absolute inset-0 flex justify-center items-center z-0">
+              <div className="w-40 h-40 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-blue-500 rounded-full blur-[50px] sm:blur-[80px] lg:blur-[100px] opacity-50 animate-glow"></div>
+            </div>
+            {/* Image */}
             <Image
               src="/assest/image1.png"
               alt="Phones"
               width={500}
               height={500}
-              className="mx-auto mt-6 sm:mt-11 rounded-xl z-10"
+              className="mx-auto mt-6 sm:mt-11 rounded-xl z-10 relative"
             />
-            {/* Animated Background */}
-            <div className="absolute inset-0 flex justify-center items-center">
-              <div className="w-40 h-40 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-blue-500 rounded-full blur-[50px] sm:blur-[80px] lg:blur-[100px] opacity-50"></div>
-            </div>
           </div>
         </div>
       </main>

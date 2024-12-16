@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import React, { useState } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 
 interface FAQItem {
   question: string;
@@ -39,11 +40,11 @@ const FAQSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-50">
       {/* Title */}
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800">
-          <span className="text-blue-500">•</span> FAQ’s{" "}
-          <span className="text-blue-500">•</span>
-        </h2>
+      <div className="flex justify-center items-center mb-8">
+        <div className="flex space-x-2 border-2 py-1.5 px-3 w-fit rounded-full border-gray-300">
+          <div className="bg-blue-500 rounded-full w-4 h-4"></div>
+          <div className="text-black text-sm font-medium">FAQ&apos;s</div>
+        </div>x``
       </div>
 
       {/* FAQs */}
@@ -51,29 +52,35 @@ const FAQSection: React.FC = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={`mb-4 p-4 border ${
-              openIndex === index ? "border-blue-400" : "border-gray-200"
-            } rounded-lg shadow-sm`}
+            className={`mb-4 p-8 rounded-3xl bg-white border border-gray-200 transition-all duration-500 ${openIndex === index ? "border-blue-300 shadow-lg shadow-blue-500/50" : "shadow-sm"
+              }`}
           >
             <button
               onClick={() => toggleFAQ(index)}
               className="w-full text-left flex justify-between items-center"
+              aria-expanded={openIndex === index}
+              aria-controls={`faq-${index}`}
             >
               <h3 className="text-lg font-semibold text-gray-800">
                 {faq.question}
               </h3>
               <span
-                className={`text-2xl transform ${
-                  openIndex === index ? "rotate-180 text-blue-500" : ""
-                }`}
+                className={`text-2xl flex items-center justify-center transform transition-all duration-300 ease-in-out ${openIndex === index
+                    ? "text-white rotate-90 bg-blue-500 p-2 rounded-full"
+                    : "text-blue-500 bg-gray-100 rounded-full p-2 shadow-md"
+                  }`}
               >
-                &#x25BC;
+                <IoIosArrowForward className="w-5 h-5" />
               </span>
             </button>
             {/* Answer */}
-            {openIndex === index && (
-              <p className="mt-2 text-gray-600">{faq.answer}</p>
-            )}
+            <div
+              id={`faq-${index}`}
+              className={`overflow-hidden transition-max-height duration-500 ease-in-out ${openIndex === index ? "max-h-screen mt-4" : "max-h-0"
+                }`}
+            >
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
           </div>
         ))}
       </div>

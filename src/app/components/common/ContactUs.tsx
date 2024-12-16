@@ -10,7 +10,7 @@ const ContactForm: React.FC = () => {
         </p>
         <h2 className="text-4xl font-bold mt-2">
           Get in touch with us.
-          <br /> We're here to assist you.
+          <br /> We&apos;re here to assist you.
         </h2>
       </div>
 

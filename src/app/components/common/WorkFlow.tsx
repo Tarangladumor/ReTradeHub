@@ -35,12 +35,12 @@ export default function WorkFlow() {
   ];
 
   return (
-    <div className="py-12 px-4 bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="py-12 px-4 text-white rounded-b-[40px]">
       {/* Header */}
       <div className="flex justify-center items-center mb-8">
         <div className="flex space-x-2 border-[1.5px] py-1.5 px-3 w-fit rounded-full border-[#D9D9D9]">
           <div className="bg-[#18A0FB] rounded-full w-4 h-4"></div>
-          <div className="text-[#010] text-sm font-medium">How it Works?</div>
+          <div className="text-[#000] text-sm font-medium">How it Works?</div>
         </div>
       </div>
 
@@ -78,22 +78,22 @@ export default function WorkFlow() {
             className="flex flex-col items-center w-full sm:w-[45%] lg:w-[22%] relative space-y-4"
           >
             {/* Icon */}
-            <div className="bg-gradient-to-b from-black to-gray-800 p-4 rounded-full">
+            <div className="bg-gradient-to-b from-black to-gray-800 p-6 rounded-full">
               <Image
                 src={item.icon}
                 alt={item.step}
-                className="w-10 h-10"
+                className="w-14 h-14"
               />
             </div>
             {/* Step */}
             <h3 className="text-center text-lg font-semibold">{item.step}</h3>
             {/* Description */}
-            <p className="text-center text-sm text-gray-400">
+            <p className="text-center text-sm text-black max-w-[75%]">
               {item.description}
             </p>
             {/* Dashed Line */}
             {index < steps.length - 1 && (
-              <div className="hidden lg:block absolute top-[45%] -right-[50%] w-[90%] h-0.5 border-t border-dashed border-gray-600"></div>
+              <div className="hidden lg:block absolute top-[15%] -right-[50%] w-[84%] h-0.5 border-t border-dashed border-gray-600"></div>
             )}
           </div>
         ))}
