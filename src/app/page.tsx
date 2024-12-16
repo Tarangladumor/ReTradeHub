@@ -3,6 +3,7 @@ import FAQSection from "./components/common/Faq";
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
 import Banner from "./components/common/main";
+import OurServices from "./components/common/OurServices";
 import WhyUs from "./components/common/Whyus";
 import WorkFlow from "./components/common/WorkFlow";
 
@@ -24,20 +25,24 @@ export default function Home() {
         <WorkFlow />
       </div>
 
-      <div className="w-full">
-        <WhyUs/>
+      <div>
+        <OurServices/>
       </div>
 
       <div className="w-full">
-        <FAQSection/>
+        <WhyUs />
       </div>
 
       <div className="w-full">
-        <ContactForm/>
+        <FAQSection />
+      </div>
+
+      <div className="w-full">
+        <ContactForm />
       </div>
 
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
