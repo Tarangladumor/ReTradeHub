@@ -64,15 +64,15 @@ export default function Header() {
       <main className="flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-24 py-8 sm:py-16 w-full">
         {/* Text Content */}
         <div className="lg:w-1/2 space-y-4 sm:space-y-6 text-center lg:text-left">
-          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold">
+          <h1 className="text-[clamp(1.5rem,4vw,3.75rem)] font-bold leading-tight">
             Turn Your Old Electronics into Cash Today!
           </h1>
-          <p className="text-gray-400 text-sm sm:text-base">
+          <p className="text-gray-400 text-[clamp(0.875rem,2.5vw,1rem)]">
             List your gadgets and let shopkeepers bid for the best price—quick,
             easy, and rewarding.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 rounded-lg">
+            <button className="bg-blue-500 hover:bg-blue-600 text-white text-[clamp(0.875rem,2vw,1rem)] px-4 sm:px-6 py-2 sm:py-3 rounded-lg">
               Sell And Earn
             </button>
           </div>
