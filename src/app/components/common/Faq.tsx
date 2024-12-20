@@ -44,15 +44,15 @@ const FAQSection: React.FC = () => {
         <div className="flex space-x-2 border-2 py-1.5 px-3 w-fit rounded-full border-gray-300">
           <div className="bg-blue-500 rounded-full w-4 h-4"></div>
           <div className="text-black text-sm font-medium">FAQ&apos;s</div>
-        </div>x``
+        </div>
       </div>
 
       {/* FAQs */}
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={`mb-4 p-8 rounded-3xl bg-white border border-gray-200 transition-all duration-500 ${openIndex === index ? "border-blue-300 shadow-lg shadow-blue-500/50" : "shadow-sm"
+            className={`mb-4 p-6 md:p-8 rounded-2xl bg-white border border-gray-200 transition-all duration-500 ${openIndex === index ? "border-blue-300 shadow-lg shadow-blue-500/50" : "shadow-sm"
               }`}
           >
             <button
@@ -61,7 +61,7 @@ const FAQSection: React.FC = () => {
               aria-expanded={openIndex === index}
               aria-controls={`faq-${index}`}
             >
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-base md:text-lg font-semibold text-gray-800">
                 {faq.question}
               </h3>
               <span
@@ -79,7 +79,7 @@ const FAQSection: React.FC = () => {
               className={`overflow-hidden transition-max-height duration-500 ease-in-out ${openIndex === index ? "max-h-screen mt-4" : "max-h-0"
                 }`}
             >
-              <p className="text-gray-600">{faq.answer}</p>
+              <p className="text-sm md:text-base text-gray-600">{faq.answer}</p>
             </div>
           </div>
         ))}
