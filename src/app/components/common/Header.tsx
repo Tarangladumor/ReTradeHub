@@ -7,11 +7,11 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="border rounded-3xl mt-12 max-h-[535px] bg-gradient-to-b from-black to-gray-900 text-white flex flex-col items-center">
+    <div className="border rounded-b-3xl mt-0 max-h-[535px] bg-gradient-to-b from-black to-gray-900 text-white flex flex-col items-center">
       {/* Header Section */}
       <header className="w-full flex justify-between items-center px-4 sm:px-8 py-4 relative">
         <div className="text-xl sm:text-2xl font-bold">E-W</div>
-
+ 
         {/* Desktop Navigation */}
         <nav className="hidden sm:flex space-x-4 sm:space-x-8">
           <a href="#home" className="hover:text-blue-400 text-sm sm:text-base">

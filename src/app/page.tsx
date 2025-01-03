@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-white text-white min-h-screen">
       {/* Header */}
-      <div className=" w-[96%]  mx-auto">
+      <div className=" w-[100%]  mx-auto ">
         <Header />
       </div>
 
