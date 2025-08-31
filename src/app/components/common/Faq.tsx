@@ -66,8 +66,8 @@ const FAQSection: React.FC = () => {
               </h3>
               <span
                 className={`text-2xl flex items-center justify-center transform transition-all duration-300 ease-in-out ${openIndex === index
-                    ? "text-white rotate-90 bg-blue-500 p-2 rounded-full"
-                    : "text-blue-500 bg-gray-100 rounded-full p-2 shadow-md"
+                  ? "text-white rotate-90 bg-blue-500 p-2 rounded-full"
+                  : "text-blue-500 bg-gray-100 rounded-full p-2 shadow-md"
                   }`}
               >
                 <IoIosArrowForward className="w-5 h-5" />
