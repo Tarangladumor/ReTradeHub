@@ -1,86 +1,90 @@
 import Image from "next/image";
 
 const OurServices = () => {
-    return (
-        <div className="bg-[linear-gradient(90deg,_#091B2C_0%,_#04090D_57.5%,_#020202_100%)] text-white py-10">
-            <div className="w-9/12 mx-auto px-5">
-                {/* Section Title */}
-                <div className="flex justify-center items-center mb-8">
-                    <div className="flex space-x-2 border-[1.5px] py-1.5 px-3 w-fit rounded-full border-[#D9D9D9]">
-                        <div className="bg-[#18A0FB] rounded-full w-4 h-4"></div>
-                        <div className="text-[#fff] text-sm font-medium">How it Works?</div>
-                    </div>
-                </div>
-
-                {/* First Row with 70%-30% Layout */}
-                <div className="flex flex-col md:flex-row gap-6 mb-6">
-                    {/* First Grid - 60% Width */}
-                    <div className="md:w-[60%] bg-gray-900 rounded-[40px] relative">
-                        {/* Laptop Image */}
-                        <Image
-                            src="/assest/laptopMockUp.png"
-                            alt="Laptop Mockup"
-                            width={300}
-                            height={100}
-                            className="w-full h-96 object-cover opacity-90 rounded-t-[40px]"
-                        />
-
-                        {/* Rupee SVG Centered */}
-                        <div className="absolute inset-0 flex justify-center top-6">
-                            <Image
-                                src="/assest/ruppeSVG.svg"
-                                alt="Rupee Icon"
-                                width={80}
-                                height={80}
-                                className="w-32 h-32"
-                            />
-                        </div>
-
-                        {/* Text Content */}
-                        <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black to-transparent rounded-b-[40px]">
-                            <h3 className="font-semibold text-lg mb-1">Instant Device Listings</h3>
-                            <p className="text-sm">
-                                Easily list your old or non-working electronics on our platform
-                                in just a few steps and get connected with shopkeepers ready to
-                                bid on your items.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Second Grid - 40% Width */}
-                    <div className="md:w-[40%] bg-blue-500 text-white p-6 rounded-[40px] shadow-md flex flex-col justify-center">
-                        <h3 className="text-4xl md:text-7xl font-bold mb-2">Device Inspection Reports</h3>
-                        <p className="text-sm">
-                            For added transparency, our platform includes technician-generated
-                            reports on your electronics, giving shopkeepers confidence in
-                            their purchases.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Second Row */}
-                <div className="bg-[linear-gradient(90deg,_#091B2C_0%,_#04090D_57.5%,_#020202_100%)] text-white p-6 rounded-[40px] shadow-md flex flex-col md:flex-row justify-evenly items-center gap-4">
-                    {/* Text Content */}
-                    <div className="basis-2/3 mb-4 md:mb-0">
-                        <h3 className="text-2xl font-bold mb-2">Competitive Bidding</h3>
-                        <p className="text-lg md:text-xl leading-relaxed">
-                            Receive competitive offers from multiple shopkeepers, ensuring
-                            you get the best value for your devices without the hassle of
-                            negotiating.
-                        </p>
-                    </div>
-
-                    {/* Hammer Image */}
-                    <Image
-                        src="/assest/hammer.png"
-                        alt="Competitive Bidding"
-                        width={350}
-                        height={200}
-                    />
-                </div>
+  return (
+    <div className="bg-[linear-gradient(90deg,_#091B2C_0%,_#04090D_57.5%,_#020202_100%)] clash-font text-white py-16">
+      <div className="w-11/12 md:w-9/12 mx-auto px-4">
+        {/* Section Title */}
+        <div className="flex justify-center items-center  mb-12">
+          <div className="flex items-center space-x-3 border animate-pulse shadow-[0_0_12px_#18A0FB] border-[#D9D9D9]/40 py-2 px-4 w-fit rounded-full bg-white/5 backdrop-blur-sm ">
+            <div className="bg-[#18A0FB] rounded-full w-4 h-4 animate-pulse shadow-[0_0_12px_#18A0FB]"></div>
+            <div className="text-white text-sm md:text-base font-semibold tracking-wide">
+              Simple. Smart. Profitable.
             </div>
+          </div>
         </div>
-    );
+
+        {/* First Row */}
+        <div className="flex flex-col md:flex-row gap-8 mb-10">
+          {/* Left Card */}
+          <div className="md:w-[60%] bg-black rounded-[32px] overflow-hidden relative shadow-lg">
+            {/* Laptop Image */}
+            <Image
+              src="/assest/laptopMockUp.png"
+              alt="Laptop Mockup"
+              width={500}
+              height={300}
+              className="w-full h-80 md:h-96  object-cover bg-black opacity-90"
+            />
+
+            {/* Rupee SVG Overlay */}
+            <div className="absolute inset-0 flex justify-center items-start pt-8">
+              <Image
+                src="/assest/ruppeSVG.svg"
+                alt="Rupee Icon"
+                width={96}
+                height={96}
+                className="w-24 md:w-32 h-24 md:h-32 animate-bounce"
+              />
+            </div>
+
+            {/* Text Content */}
+            <div className="absolute bottom-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
+              <h3 className="font-semibold text-xl mb-2">List in Minutes</h3>
+              <p className="text-sm md:text-base text-gray-200 leading-relaxed">
+                your old or unused device details, 
+                and your listing goes live instantly for verified shopkeepers to see.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Card */}
+          <div className="md:w-[40%] bg-gradient-to-br from-blue-600 to-blue-400 text-white p-8 rounded-[32px] shadow-lg flex flex-col justify-center">
+            <h3 className="text-3xl md:text-5xl font-extrabold mb-4 leading-snug">
+              Verified Device Reports
+            </h3>
+            <p className="text-sm md:text-base text-white/90 leading-relaxed">
+              Every device gets a technician's inspection report so shopkeepers 
+              buy with trust and you sell with confidence. No hidden issues, no doubts.
+            </p>
+          </div>
+        </div>
+
+        {/* Second Row */}
+        <div className="bg-gradient-to-r from-[#0F1C2B] via-[#09131D] to-[#020202] p-8 rounded-[32px] shadow-xl flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Text Content */}
+          <div className="basis-2/3">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3">Real-Time Bidding</h3>
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+              Watch shopkeepers compete for your device with transparent bids. 
+              No endless negotiations just genuine offers, live and in your favor.
+            </p>
+          </div>
+
+          {/* Hammer Image */}
+          <div className="flex justify-center">
+            <Image
+              src="/assest/hammer.png"
+              alt="Competitive Bidding"
+              width={300}
+              height={200}
+              className="w-48 md:w-72 h-auto drop-shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default OurServices;

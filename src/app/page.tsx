@@ -9,7 +9,7 @@ import WorkFlow from "./components/common/WorkFlow";
 
 export default function Home() {
   return (
-    <div className="bg-white text-white min-h-screen">
+    <div className="bg-white  text-white min-h-screen">
       {/* Header */}
       <div className=" w-[96%]  mx-auto">
         <Header />

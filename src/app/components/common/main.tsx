@@ -27,8 +27,8 @@ export default function Banner() {
       <div className="w-full md:w-1/2 flex items-center relative">
         {/* Text Content */}
         <div className="text-white px-6 md:px-12 text-right flex-1">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-white leading-snug tracking-wide">
-            Re-Trade Hub is your go-to platform for transforming old electronics into opportunities, connecting you with shopkeepers who offer top prices with just a few clicks
+          <h2 className="text-xl clash-font sm:text-2xl md:text-3xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-white leading-snug tracking-wide">
+            Ebuddy turns your old electronics into new opportunities get the best price from trusted shopkeepers in just a few clicks.
           </h2>
         </div>
 

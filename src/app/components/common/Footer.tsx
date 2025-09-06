@@ -2,14 +2,13 @@ import React, { FC } from "react";
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-blue-500 text-white py-10">
+        <footer className="bg-blue-500 px-10 text-white py-10">
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
                 {/* Newsletter Section */}
                 <div className="w-full md:w-1/2 text-center md:text-left mb-6 md:mb-0">
                     <h2 className="text-2xl font-bold mb-2">Subscribe to our Newsletter</h2>
                     <p className="text-sm">
-                        Subscribe for Updates: Stay informed about the latest investor updates,
-                        financial results, and announcements by subscribing to our newsletter.
+                        eBuddy is on its way! 🚀 Stay informed about our launch updates, new features, and how you’ll soon be able to sell your old electronic products with ease. Subscribe now and be the first to know when we go live.
                     </p>
                 </div>
 
@@ -28,12 +27,15 @@ const Footer: FC = () => {
                         Subscribe
                     </button>
                 </form>
+                
             </div>
 
             {/* Footer Copyright */}
-            <div className="text-center mt-6 text-sm">
-                &copy; E-Waste management 2024
-            </div>
+           <div className="flex flex-col sm:flex-row justify-between items-center text-center px-5 mt-6 text-sm ">
+  <p>&copy; EBuddy 2025. All rights reserved.</p>
+  <p className="mt-2 sm:mt-0">Developed by <a href="https://www.codenixlabs.com" className="hover:underline">codenixlabs.com</a></p>
+</div>
+
         </footer>
     );
 };
