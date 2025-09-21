@@ -9,10 +9,33 @@ import WorkFlow from "./components/common/WorkFlow";
 
 export default function Home() {
   return (
-    <div className="bg-white text-white min-h-screen">
+    <div className="bg-white  overflow-x-hidden text-white min-h-screen">
       {/* Header */}
+
+      <div className="gradient-edge left-0" />
+      <div className="gradient-edge right-0" />
+
+      <div className="marquee h-10 mt-3  bg-gradient-to-l from-blue-400 to-violet-800 flex items-center">
+        <div className="marquee-box flex gap-2 animate-marquee">
+          {Array.from({ length: 8 }).map((_, index) => (
+            <div
+              key={index}
+              className="flex-none whitespace-nowrap px-4 text-white font-semibold text-lg tracking-wide"
+            >
+              🚀 Ebuddy is on its way — Stay tuned for updates!
+            </div>
+          ))}
+        </div>
+      </div>
+
+
       <div className=" w-[96%]  mx-auto">
+
         <Header />
+      </div>
+
+      <div className="relative mt-3  overflow-hidden">
+
       </div>
 
       {/* Banner */}
@@ -26,7 +49,7 @@ export default function Home() {
       </div>
 
       <div>
-        <OurServices/>
+        <OurServices />
       </div>
 
       <div className="w-full">

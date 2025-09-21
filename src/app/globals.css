@@ -14,8 +14,92 @@
   }
 }
 
+html
+{
+  background-color: white;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes dashGlow {
+  0% {
+    transform: translateX(-120%) translateY(-50%);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%) translateY(-50%);
+    opacity: 0.7;
+  }
+}
+
+.animate-dashGlow {
+  animation: dashGlow 2.5s linear infinite;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../../public/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../../public/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Clash Display';
+  src: url('../../public/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('../../public/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'Clash Display';
+  src: url('../../public/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('../../public/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+} */
+
+body {
+  font-family: 'Clash Display', sans-serif;
+}
+
+
+  /* marquee */
+  .marquee {
+    width: 100dvw;
+    overflow: hidden;
+    position: relative;
+  }
+  .marquee-box {
+    display: flex;
+    align-items: center;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 30s linear infinite;
+  }
+  .marquee-item {
+    float: left;
+  }
+  @keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  /* marquee end */
+    .marquee-item {
+      @apply md:w-40 w-32;
+    }

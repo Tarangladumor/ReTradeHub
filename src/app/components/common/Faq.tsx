@@ -38,17 +38,17 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 clash-font bg-gray-50">
       {/* Title */}
-      <div className="flex justify-center items-center mb-8">
-        <div className="flex space-x-2 border-2 py-1.5 px-3 w-fit rounded-full border-gray-300">
+      <div className="flex justify-center  items-center mb-8">
+        <div className="flex space-x-2 border-2 animate-pulse shadow-[0_0_12px_#18A0FB] py-1.5 px-3 w-fit rounded-full border-gray-300">
           <div className="bg-blue-500 rounded-full w-4 h-4"></div>
           <div className="text-black text-sm font-medium">FAQ&apos;s</div>
         </div>
       </div>
 
       {/* FAQs */}
-      <div className="max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-[960px] mx-auto px-4 md:px-6 lg:px-8">
         {faqs.map((faq, index) => (
           <div
             key={index}

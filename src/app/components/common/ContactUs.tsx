@@ -42,7 +42,7 @@ const ContactForm: React.FC = () => {
   return (
     <section className="bg-[#12151B] text-white py-12 px-4">
       {/* Title and Social Media Icons */}
-      <div className="flex flex-col-reverse lg:flex-row justify-between items-center max-w-4xl mx-auto">
+      <div className="flex flex-col-reverse lg:flex-row justify-between items-center max-w-5xl mx-auto">
         <div className="text-center lg:text-left mb-8 lg:mb-0">
           <p className="text-sm uppercase tracking-widest text-gray-400">
             Contact Us
