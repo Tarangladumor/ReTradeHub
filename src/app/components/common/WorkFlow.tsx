@@ -133,7 +133,7 @@ const buyerSteps = [
 
             {/* Dashed Line with Glow */}
             {index < steps.length - 1 && (
-              <div className="hidden lg:block absolute top-[30%] -right-[50%] w-[65%] h-[3px] border-t border-dashed border-gray-400 overflow-hidden">
+              <div className="hidden lg:block absolute top-[30%] -right-[50%] w-[65%] h-[3px] border-t border-dashed border-white overflow-hidden">
                 <span
                   className="absolute top-1/2 left-0 -translate-y-1/2 h-[16px] w-1/2 
                   bg-gradient-to-r from-[#18A0FB] via-[#4facfe] to-[#18A0FB]

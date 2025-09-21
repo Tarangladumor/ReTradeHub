@@ -49,7 +49,7 @@ const OurServices = () => {
           </div>
 
           {/* Right Card */}
-          <div className="md:w-[40%] bg-gradient-to-br from-blue-600 to-blue-400 text-white p-8 rounded-[32px] shadow-lg flex flex-col justify-center">
+          <div className="md:w-[40%] bg-gradient-to-br from-blue-800 to-blue-300 text-white p-8 rounded-[32px] shadow-lg flex flex-col justify-center">
             <h3 className="text-3xl md:text-5xl font-extrabold mb-4 leading-snug">
               Verified Device Reports
             </h3>
@@ -61,7 +61,7 @@ const OurServices = () => {
         </div>
 
         {/* Second Row */}
-        <div className="bg-gradient-to-r from-[#0F1C2B] via-[#09131D] to-[#020202] p-8 rounded-[32px] shadow-xl flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="bg-gradient-to-r from-[#243e5c] via-[#09131D] to-[#1c1b1b] p-8 rounded-[32px] shadow-xl flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Text Content */}
           <div className="basis-2/3">
             <h3 className="text-2xl md:text-3xl font-bold mb-3">Real-Time Bidding</h3>
